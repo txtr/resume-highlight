@@ -1,0 +1,107 @@
+\input{custom}
+
+\documentclass{resume}
+\usepackage[left=0.5in, top=0.5in, right=0.5in, bottom=0.5in]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[none]{hyphenat}
+\usepackage{hyperref}
+
+%---------------------------------------------------
+% HEADER TEMPLATE 
+%----------------------------------------------------------------
+
+\name{\MyName}
+
+\vspace{\SpacerBelowTitle}
+
+\address{
+    \small{
+        {\MyPhone} \\
+        {\MyEmail} \\
+        {\url{\MyLinkedin}} \\
+        {\url{\MyGithub}}
+    }
+}
+
+\begin{document}
+
+\vspace{\SpacerBelowSubtitle}
+
+%----------------------------------------------------------------
+% SUMMARY 
+%----------------------------------------------------------------
+\vspace{\SpacerAboveCategory}
+\begin{rSection}{SUMMARY}
+\vspace{\SpacerBelowCategory}
+\input{t_summary}
+\end{rSection}
+
+%----------------------------------------------------------------
+% EXPERIENCE 
+%----------------------------------------------------------------
+\vspace{\SpacerAboveCategory}
+\begin{rSection}{EXPERIENCE}
+\vspace{\SpacerBelowCategory}
+
+\input{e_bnmc}
+\input{t_experience}
+
+\input{e_nido}
+\input{t_experience}
+
+\input{e_frcrce}
+\input{t_experience}
+
+\end{rSection}
+
+%----------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------
+
+\vspace{\SpacerAboveCategory}
+\begin{rSection}{Education}
+\vspace{\SpacerBelowCategory}
+
+\vspace{\SpacerAboveTopic}
+\item{\textbf{M.S. in Computer Science} | University at Buffalo, The State University of New York\hfill \textbf{Jan 2022 - Jun 2023}}
+
+\vspace{\SpacerCustom}
+
+\item{\textbf{B.E. in Computer Engineering} | University of Mumbai\hfill \textbf{Aug 2017 - Jul 2021}}
+
+\end{rSection}
+
+%----------------------------------------------------------------
+%	PROJECTS & ACHIEVEMENTS
+%----------------------------------------------------------------
+
+
+
+\vspace{\SpacerAboveCategory}
+\begin{rSection}{PROJECTS \& ACHIEVEMENTS}
+\vspace{\SpacerBelowCategory}
+
+\input{p_mindmeld}
+\input{t_project}
+
+\input{p_raft_java}
+\input{t_project}
+
+\end{rSection}
+
+%----------------------------------------------------------------
+% SKILLS 
+%----------------------------------------------------------------
+
+\vspace{\SpacerAboveCategory}
+\begin{rSection}{SKILLS}
+\vspace{\SpacerBelowCategory}
+
+
+\vspace{\SpacerAboveTopic}
+\input{t_skill}
+\vspace{\SpacerBelowTopic}
+
+\end{rSection}
+
+\end{document}
